@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>VCE</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+	<script>
+	function validateForm() {
+		var x = document.forms["myForm"]["Year"]["Sem"]["Acad_year"].value;
+		if (x == "") {
+			alert("Please Fill all the Mandatory Fields");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="header">
+		<h2>Vasavi College Of Engineering</h2>
+	</div>
+	<div class="topnav">
+		<a href="Student.html">Student Form</a> <a href="Academic.html">Academics
+			Form</a> <a href="Proctor.html">Proctor Form</a> <a class="active" href=#>Attendance
+			Form</a>
+	</div>
+	<center>
+		<form method="post" autocomplete="on" name="myForm()"
+			onsubmit="return validateForm()">
+			<center>
+				<h2>Attendance details</h2>
+			</center>
+			<fieldset>
+				<table cellspacing="20px" cellpadding="15px">
+					<tr>
+						<td label for="Year">Year:</td>
+						<td><input type="number" name="Year" max="4" min="1"></td>
+					</tr>
+					<tr>
+						<td label for="Sem">Sem:</td>
+						<td><input type="number" name="Sem" max="8" min="1"></td>
+					</tr>
+					<tr>
+						<td label for="Acad_Year">Academic year:</td>
+						<td><input type="text" name="Acad_year"
+							placeholder="eg:2015-2016"></td>
+					</tr>
+					<tr>
+					<tr>
+						<td label for="Attend">Attendance:</td>
+						<td><input type="text" name="attend_input"></td>
+					</tr>
+					<tr>
+						<td label for="Reset"></td>
+						<td><input type="reset" value="Reset" /></td>
+						<td label for="Submit"></td>
+						<td><input type="submit" value="Submit" /></td>
+					</tr>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</center>
+</body>
+</html>

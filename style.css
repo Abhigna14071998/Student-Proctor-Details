@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+ *{
+    box-sizing:border-box;
+    
+ 
+  }  
+  body{
+    margin:0;
+  }
+  .header{
+   text-align:center;
+   background-color:black;
+   color:white;
+   padding:15px;
+   
+  }
+  .topnav{
+   overflow:hidden;
+   background-color:black;
+
+  }
+  .topnav a{
+  display:block;
+  float:left;
+  text-decoration:none;
+  text-align:center;
+  padding :10px 15px;
+  color:white;
+  }
+  .topnav a:hover{
+   background-color:green;
+  }
+  .topnav a.active{
+  background-color:green;}
+  
+ h2{
+ color:red;
+ } 
